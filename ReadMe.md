@@ -9,6 +9,8 @@
 - Custom Styling Options
 
 
+
+
 ## Installation
 
 With Yarn
@@ -22,6 +24,9 @@ With npm
 ```
 npm i --save react-spinner-loader
 ```
+
+## Documentation
+You could view the documentation in <a href = "https://github.com/nijin-vinodan/react-spinner-loader">Github Page</a> as well.
 
 ## Usage
 
