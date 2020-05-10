@@ -8,7 +8,7 @@
 - Custom Loading Message
 - Custom Styling Options
 
-
+<img src = "https://github.com/nijin-vinodan/react-spinner-loader/blob/master/examples/react-spinner-loader.png?raw=true" width = "500"/>
 
 
 ## Installation
