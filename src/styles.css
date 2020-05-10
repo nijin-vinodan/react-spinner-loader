@@ -1,0 +1,89 @@
+.loader-container * {
+    box-sizing: border-box;
+}
+
+.loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader-container.body,
+.loader-container.box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.loader-container.body {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader.box,
+.loader.body {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.loader.vertical {
+    flex-direction: column;
+    padding: 30px 30px;
+}
+
+.loader .spinner {
+    width: 40px;
+    height: 40px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #ddd;
+    border-top-color: #3498db;
+    border-radius: 50%;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+
+.loader .message {
+    color: #101010;
+    margin: 10px;
+}
+
+.loader.box .message,
+.loader.body .message {
+    color: #FFF;
+}
+
+.loader.vertical .message {
+    margin-bottom: 0;
+}
+
+
+/* --------- SPINNER ANIMATION ------------ */
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
